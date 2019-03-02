@@ -19,7 +19,30 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  
+  <div class="container-fluid">
+    <h1>So you want to have a baby...</h1>
+    
+<form>
+  <div class="form-group">
+    <label for="woman-age">Age of woman</label>
+    <input type="number" id="woman-age" name="woman-age"
+       min="18" max="100" class="form-control" aria-describedby="woman-age-help">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="woman-age-help" class="form-text text-muted">Age at which you would start trying.</small>
+  </div>
+    <div class="form-group">
+    <label for="man-age">Age of man</label>
+    <input type="number" id="man-age" name="man-age"
+       min="18" max="100" class="form-control" aria-describedby="man-age-help">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="man-age-help" class="form-text text-muted">Age at which you would start trying.</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    
+    <div id="results"></div>
+  </div>
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
